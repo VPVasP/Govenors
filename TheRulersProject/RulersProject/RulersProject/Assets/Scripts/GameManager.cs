@@ -7,63 +7,86 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public Animator platform1;
-    public Animator platform2;
-    public GameObject platformOne;
-    public GameObject platformTwo;
-    public bool levelOneComplete = false;
-    public bool levelTwoComplete = false;
-    public bool levelThreeComplete = false;
-    public GameObject bowl1;
-    public GameObject bowl2;
-    public GameObject disabledBowl1;
-    public GameObject disabledBowl2;
-    public GameObject bowl3;
-    public GameObject box1;
-    public GameObject box2;
-    public GameObject box3;
-    public int overallCurrency;
-    public int CurrentCurrency = 0;
-    public int GainCurrency = 5;
-    public int BuyCurrency = 10;
-    public int BuyCurrencyTwo = 8;
+    public static GameManager instance;
+    public Animator[] platforms;
+    public GameObject[] platformsGameObjects;
+    public GameObject[] bowls;
+    public GameObject[] disabledBowls;
+    public GameObject[] shops;
+    [SerializeField] private bool levelOneComplete = false, levelTwoComplete = false, levelThreeComplete = false;
+    [SerializeField] private float overallCurrency;
+[SerializeField] private float CurrentCurrency = 0;
     public TextMeshProUGUI CurrencyText;
-    public AudioSource ourMusic;
-    public AudioSource UpgradeMusic;
-    public GameObject OpenUpgrade;
+    public TextMeshProUGUI enemiesKilledText;
+   [SerializeField] private AudioSource aud;
+    [SerializeField] private  AudioClip[] audioClips;
+    public GameObject shopPanel;
     public GameObject Sword;
     public GameObject OneHandedSwordOne;
     public GameObject OneHandedSwordTwo;
-    public Animator PlayerAnimator;
-    public static GameManager instance;
-
+    public int enemiesKilled;
     private void Awake()
     {
         instance = this;
     }
     private void Start()
     {
-       CurrencyText.text = "Coins " + CurrentCurrency.ToString();
+        CurrencyText.text = "Coins " + CurrentCurrency.ToString();
+        aud = GetComponent<AudioSource>();
+        aud.clip = audioClips[0];
+        aud.Play();
+        enemiesKilledText.text = "Enemies Killed " + enemiesKilled.ToString();
+    }
+    private void Update()
+    {
+        switch (enemiesKilled)
+        {
+            case 4:
+                levelOneComplete = true;
+                break;
+        }
       
+        if (overallCurrency == 50)
+        {
+            levelTwoComplete = true;
+        }
+        if (overallCurrency == 100)
+        {
+            levelThreeComplete = true;
+        }
+        if (levelOneComplete)
+        {
+            platformsGameObjects[0].SetActive(true);
+            platforms[0].SetTrigger("LevelOneComplete");
+            bowls[0].SetActive(false);
+            bowls[1].SetActive(false);
+            shops[0].SetActive(true);
+
+            levelOneComplete = false;
+        }
+        if (levelTwoComplete)
+        {
+            platformsGameObjects[1].SetActive(true);
+            platforms[1].SetTrigger("LevelTwoComplete");
+            disabledBowls[0].SetActive(false);
+            bowls[2].SetActive(false);
+            shops[1].SetActive(true);
+
+            levelTwoComplete = false;
+        }
+        if (levelThreeComplete)
+        {
+            disabledBowls[1].SetActive(false);
+            shops[2].SetActive(true);
+            levelTwoComplete = false;
+
+            Cursor.lockState = CursorLockMode.None;
+            Invoke("LoadOutro", 3f);
+        }
     }
 
-    public void Save()
-    {
-        PlayerPrefs.SetString("UpgradePoints", CurrencyText.ToString());
-     
-    }
-    public void Load()
-    {
-        PlayerPrefs.GetString("UpgradePoints", CurrencyText.ToString());
-    }
-    public void GainCoins()
-    {
-        CurrentCurrency += GainCurrency;
-        overallCurrency += GainCurrency;
-        CurrencyText.text = "Coins " + CurrentCurrency.ToString();
-        PlayerPrefs.SetString("UpgradePoints", CurrencyText.text);
-    }
-    public void BuySword()
+
+    public void BuySword(int swordprice)
     {
         if (Sword.activeInHierarchy)
         {
@@ -71,7 +94,8 @@ public class GameManager : MonoBehaviour
         }
         if (CurrentCurrency >= 10)
         {
-            CurrentCurrency -= BuyCurrency;
+            swordprice = 10;
+            CurrentCurrency -= 10;
 
             CurrencyText.text = "Coins " + CurrentCurrency.ToString();
             OneHandedSwordOne.SetActive(false);
@@ -79,7 +103,7 @@ public class GameManager : MonoBehaviour
             Sword.SetActive(true);
         }
     }
-    public void BuyLightSabersSword()
+    public void BuyLightSabersSword(int lightsabePrice)
     {
         if (OneHandedSwordOne.activeInHierarchy)
         {
@@ -87,7 +111,8 @@ public class GameManager : MonoBehaviour
         }
         if (CurrentCurrency >= 8)
         {
-            CurrentCurrency -= BuyCurrencyTwo;
+            lightsabePrice = 8;
+            CurrentCurrency -= lightsabePrice;
 
             CurrencyText.text = "Coins " + CurrentCurrency.ToString();
             Sword.SetActive(false);
@@ -101,59 +126,26 @@ public class GameManager : MonoBehaviour
     }
     public void ExitUpgradeSystem()
     {
-        ourMusic.Play();
-        UpgradeMusic.Stop();
-        OpenUpgrade.SetActive(false);
+        aud.clip = audioClips[0];
+        aud.Play();
+        shopPanel.SetActive(false);
         PauseManager.instance.isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
     }
-    private void Update()
+    public void GainCoins(float gainCoinsCurrency)
     {
-        if(overallCurrency == 25)
-        {
-            levelOneComplete = true;
-        }
-        if (overallCurrency == 50)
-        {
-            levelTwoComplete = true;
-        }
-        if (overallCurrency == 100)
-        {
-            levelThreeComplete = true;
-        }
-        if (levelOneComplete)
-        {
-            platformOne.SetActive(true);
-            platform1.SetTrigger("LevelOneComplete");
-            bowl1.SetActive(false);
-            bowl2.SetActive(false);
-            box1.SetActive(true);
-          
-            levelOneComplete = false;
-        }
-        if (levelTwoComplete)
-        {
-            platformTwo.SetActive(true);
-            platform2.SetTrigger("LevelTwoComplete");
-            disabledBowl1.SetActive(false);
-            bowl3.SetActive(false);
-            box2.SetActive(true);
-         
-            levelTwoComplete = false;
-        }
-        if (levelThreeComplete)
-        {
-            disabledBowl2.SetActive(false);
-            box3.SetActive(true);
-            levelTwoComplete = false;
-           
-            Cursor.lockState = CursorLockMode.None;
-            Invoke("LoadOutro", 3f);
-        }
+        CurrentCurrency += gainCoinsCurrency;
+        overallCurrency += gainCoinsCurrency;
+        CurrencyText.text = "Coins " + CurrentCurrency.ToString();
     }
-}
-  
+    public void UpdateEnemyKillCount()
+    {
+        enemiesKilled += 1;
+        enemiesKilledText.text ="Enemies Killed "+ enemiesKilled.ToString();
+    }
 
-    
+
+}
+
 

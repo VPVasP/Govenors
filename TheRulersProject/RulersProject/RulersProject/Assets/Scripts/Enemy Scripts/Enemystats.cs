@@ -28,9 +28,12 @@ public class Enemystats : MonoBehaviour
         {
             enemyAnim.SetBool("IsDead", true);
             currentHealth = 0;
-            if (currentHealth == 0)
+            if (currentHealth <= 0)
             {
-                ourManager.GainCoins();
+
+             float   gainCoinsCurrency = Random.Range(2, 5);
+                ourManager.GainCoins(gainCoinsCurrency);
+                GameManager.instance.UpdateEnemyKillCount();
                 Destroy(col);
                 Destroy(aiStates);
                 Destroy(ai);
