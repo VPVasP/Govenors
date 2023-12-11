@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
 [SerializeField] private float CurrentCurrency = 0;
     public TextMeshProUGUI CurrencyText;
     public TextMeshProUGUI enemiesKilledText;
-   [SerializeField] private AudioSource aud;
-    [SerializeField] private  AudioClip[] audioClips;
+  public AudioSource aud;
+    public   AudioClip[] audioClips;
     public GameObject shopPanel;
     public GameObject Sword;
     public GameObject OneHandedSwordOne;
@@ -41,19 +41,21 @@ public class GameManager : MonoBehaviour
     {
         switch (enemiesKilled)
         {
-            case 4:
+            case 5:
                 levelOneComplete = true;
+                break;
+
+            case 10:
+                levelTwoComplete = true;
+                break;
+
+            case 20:
+                levelThreeComplete = true;
                 break;
         }
       
-        if (overallCurrency == 50)
-        {
-            levelTwoComplete = true;
-        }
-        if (overallCurrency == 100)
-        {
-            levelThreeComplete = true;
-        }
+   
+    
         if (levelOneComplete)
         {
             platformsGameObjects[0].SetActive(true);
@@ -81,7 +83,7 @@ public class GameManager : MonoBehaviour
             levelTwoComplete = false;
 
             Cursor.lockState = CursorLockMode.None;
-            Invoke("LoadOutro", 3f);
+            Invoke("LoadOutro", 5f);
         }
     }
 
@@ -96,11 +98,12 @@ public class GameManager : MonoBehaviour
         {
             swordprice = 10;
             CurrentCurrency -= 10;
-
+            Debug.Log("Bought " + Sword.name);
             CurrencyText.text = "Coins " + CurrentCurrency.ToString();
             OneHandedSwordOne.SetActive(false);
             OneHandedSwordTwo.SetActive(false);
             Sword.SetActive(true);
+            shopPanel.SetActive(false);
         }
     }
     public void BuyLightSabersSword(int lightsabePrice)
@@ -118,6 +121,7 @@ public class GameManager : MonoBehaviour
             Sword.SetActive(false);
             OneHandedSwordOne.SetActive(true);
             OneHandedSwordTwo.SetActive(true);
+            shopPanel.SetActive(false);
         }
     }
     public void LoadOutro()

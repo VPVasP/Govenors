@@ -10,6 +10,7 @@ public class IdleAI : MonoBehaviour
     public Transform playerTransform;
     public Transform startPos;
     public Animator anim;
+   [SerializeField] private AudioSource aud;
     private enum State
     {
         Idle,
@@ -24,6 +25,7 @@ public class IdleAI : MonoBehaviour
     void Start()
     {
         fov = GetComponent<FOV>();
+        aud = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -58,7 +60,11 @@ public class IdleAI : MonoBehaviour
                 anim.SetBool("IsChasing", false);
                 if (fov.isAttacking)
                 {
+                    aud.clip = SoundEffectsManager.instance.enemyAttackSound;
+                    aud.Play();
                     anim.SetBool("IsAttacking", true);
+                    Debug.Log("Attacking Player");
+                    
                 }
                 else if (!fov.isAttacking)
                 {

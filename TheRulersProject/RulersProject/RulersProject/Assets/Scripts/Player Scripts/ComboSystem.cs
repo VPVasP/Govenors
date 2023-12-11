@@ -18,10 +18,7 @@ public class ComboSystem : MonoBehaviour
     }
     void Update()
     {
-        if(PauseManager.instance.isPaused == true)
-        {
-            return;
-        }
+      
         if (!sword.activeInHierarchy && !OneHandedSword.activeInHierarchy)
         {
             if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit1"))

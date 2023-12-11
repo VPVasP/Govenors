@@ -5285,6 +5285,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 2057505374}
   anim: {fileID: 109869700}
+  aud: {fileID: 0}
 --- !u!114 &109869703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5327,11 +5328,11 @@ MonoBehaviour:
   healthBar: {fileID: 1871745231}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 109869700}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 109869702}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &109869705
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6037,6 +6038,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1664319702}
   anim: {fileID: 150903720}
+  aud: {fileID: 0}
 --- !u!195 &150903716
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6101,11 +6103,11 @@ MonoBehaviour:
   healthBar: {fileID: 59894012}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 150903720}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 150903715}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &150903719
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6472,11 +6474,11 @@ MonoBehaviour:
   healthBar: {fileID: 1403891634}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 501908082}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 494661667}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!114 &158807543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7415,6 +7417,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1941116739}
   anim: {fileID: 194439884}
+  aud: {fileID: 0}
 --- !u!195 &194439880
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7479,11 +7482,11 @@ MonoBehaviour:
   healthBar: {fileID: 1423020665}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 194439884}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 194439879}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &194439883
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11611,6 +11614,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 424608976}
   anim: {fileID: 232417150}
+  aud: {fileID: 0}
 --- !u!114 &232417153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11653,11 +11657,11 @@ MonoBehaviour:
   healthBar: {fileID: 1832762947}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 232417150}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 232417152}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &232417155
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12777,7 +12781,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1041904958}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BuySword
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13321,7 +13325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 0, y: 4.26, z: -8.8}
+  m_FollowOffset: {x: 0, y: 22.33, z: -26.42}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -13818,6 +13822,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1979236809}
   anim: {fileID: 357441809}
+  aud: {fileID: 0}
 --- !u!195 &357441805
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13882,11 +13887,11 @@ MonoBehaviour:
   healthBar: {fileID: 2066836068}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 357441809}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 357441804}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &357441808
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14135,8 +14140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8155de12101437498c67fc9f1721e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ourMusic: {fileID: 871662010}
-  UpgradeMusic: {fileID: 1697808199}
   OpenUpgrade: {fileID: 82251118}
   openOption: {fileID: 1150865993}
 --- !u!135 &372658644
@@ -20515,6 +20518,7 @@ GameObject:
   - component: {fileID: 158807543}
   - component: {fileID: 158807544}
   - component: {fileID: 494661667}
+  - component: {fileID: 501908083}
   m_Layer: 6
   m_Name: Idle Ghoul
   m_TagString: Enemy
@@ -20539,6 +20543,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 188517836}
   anim: {fileID: 501908082}
+  aud: {fileID: 0}
 --- !u!1 &494661670
 GameObject:
   m_ObjectHideFlags: 0
@@ -22881,6 +22886,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &501908083
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494661666}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &502423851
 GameObject:
   m_ObjectHideFlags: 0
@@ -23616,8 +23717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8155de12101437498c67fc9f1721e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ourMusic: {fileID: 871662010}
-  UpgradeMusic: {fileID: 1697808199}
   OpenUpgrade: {fileID: 82251118}
   openOption: {fileID: 1150865993}
 --- !u!4 &559152409 stripped
@@ -24831,8 +24930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8155de12101437498c67fc9f1721e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ourMusic: {fileID: 871662010}
-  UpgradeMusic: {fileID: 1697808199}
   OpenUpgrade: {fileID: 82251118}
   openOption: {fileID: 1150865993}
 --- !u!4 &620202764 stripped
@@ -26112,7 +26209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 0, y: 4.26, z: -8.8}
+  m_FollowOffset: {x: 0, y: 22.33, z: -26.42}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -27572,7 +27669,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1041904958}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BuyLightSabersSword
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -28539,6 +28636,7 @@ MonoBehaviour:
   startPos: {fileID: 1374571312}
   secPos: {fileID: 949371691}
   anim: {fileID: 791131583}
+  aud: {fileID: 0}
 --- !u!114 &791131587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28581,11 +28679,11 @@ MonoBehaviour:
   healthBar: {fileID: 89442614}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 791131583}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 0}
   pat: {fileID: 791131585}
   aiStates: {fileID: 791131586}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &794377084
 GameObject:
   m_ObjectHideFlags: 0
@@ -29221,6 +29319,7 @@ MonoBehaviour:
   startPos: {fileID: 651955972}
   secPos: {fileID: 1611099085}
   anim: {fileID: 917033860}
+  aud: {fileID: 0}
 --- !u!114 &833027907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29253,11 +29352,11 @@ MonoBehaviour:
   healthBar: {fileID: 385858438}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 917033860}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 0}
   pat: {fileID: 833027907}
   aiStates: {fileID: 833027904}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &840516589
 GameObject:
   m_ObjectHideFlags: 0
@@ -33756,6 +33855,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 346132668}
   anim: {fileID: 894146121}
+  aud: {fileID: 0}
 --- !u!114 &894146124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33798,11 +33898,11 @@ MonoBehaviour:
   healthBar: {fileID: 1390017315}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 894146121}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 894146123}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &894146126
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34907,6 +35007,7 @@ GameObject:
   - component: {fileID: 833027904}
   - component: {fileID: 833027907}
   - component: {fileID: 833027909}
+  - component: {fileID: 917033861}
   m_Layer: 6
   m_Name: Patrolling Ghoul
   m_TagString: Enemy
@@ -36387,9 +36488,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909746644}
-  m_LocalRotation: {x: -0, y: 0.94497573, z: -0, w: 0.3271406}
-  m_LocalPosition: {x: 3.9400024, y: 0.21500015, z: 0.9450016}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalRotation: {x: -0, y: 0.94497573, z: -0, w: 0.32714066}
+  m_LocalPosition: {x: 3.9400024, y: 0.21499634, z: 0.9450054}
+  m_LocalScale: {x: 0.35000038, y: 0.35, z: 0.35000038}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 910048294}
@@ -36491,7 +36592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 0, y: 4.26, z: -8.8}
+  m_FollowOffset: {x: 0, y: 22.33, z: -26.42}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -36564,6 +36665,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &917033861
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909746644}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &918656974
 GameObject:
   m_ObjectHideFlags: 0
@@ -39275,7 +39472,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041601456}
-  m_LocalRotation: {x: 0.19830662, y: -0.26082888, z: 0.05483866, w: 0.94320494}
+  m_LocalRotation: {x: 0.31474358, y: -0.25191948, z: 0.0870375, w: 0.91098714}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -39294,9 +39491,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1041904959}
   - component: {fileID: 1041904958}
-  - component: {fileID: 1041904960}
-  - component: {fileID: 1041904961}
   - component: {fileID: 1041904962}
+  - component: {fileID: 1041904963}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -39342,7 +39538,7 @@ MonoBehaviour:
   enemiesKilledText: {fileID: 2146475735}
   aud: {fileID: 0}
   audioClips:
-  - {fileID: 8300000, guid: 1131642356715a14fa1e86786b83b642, type: 3}
+  - {fileID: 8300000, guid: 8800c41f586365c439cd707cf718cbf1, type: 3}
   - {fileID: 8300000, guid: 693a9cf62269ecc4ea0ec082a2853833, type: 3}
   shopPanel: {fileID: 82251118}
   Sword: {fileID: 931733523}
@@ -39364,42 +39560,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1041904960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041904957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d695caad9bebac74193b0d91d96f06bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ourMusic: {fileID: 871662010}
-  pauseMusic: {fileID: 1697808199}
-  optionsMenu: {fileID: 1602057323384204839}
-  MainMenu: {fileID: 1602057323995354467}
-  myFX: {fileID: 871662010}
-  hoverOverFX: {fileID: 8300000, guid: 52425ffb985f1f949891aeb22c8d81ea, type: 3}
-  clickFX: {fileID: 8300000, guid: 29e2d4681dcf76746955be7922f59103, type: 3}
-  volumeSlider: {fileID: 1602057322965812952}
-  dropdownText: {fileID: 0}
-  isPaused: 0
---- !u!114 &1041904961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041904957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 100e13db297de2f4aafb08e1ebefca45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UpgradePoints: {fileID: 1203430372}
-  Player: {fileID: 216918779}
 --- !u!82 &1041904962
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39496,6 +39656,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1041904963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041904957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f4b5e8461c6d34aae6cb0b037d86cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAttackSound: {fileID: 8300000, guid: 82645dd11076a2b48ab76062fc57dfd0, type: 3}
+  enemyHurtSound: {fileID: 8300000, guid: b9e852fb7d93da9479c843cc16b69331, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: b9e852fb7d93da9479c843cc16b69331, type: 3}
 --- !u!1 &1045349972
 GameObject:
   m_ObjectHideFlags: 0
@@ -39576,6 +39751,7 @@ GameObject:
   - component: {fileID: 1050769404}
   - component: {fileID: 1050769403}
   - component: {fileID: 1050769402}
+  - component: {fileID: 1050769409}
   m_Layer: 6
   m_Name: Patrolling Ghoul (1)
   m_TagString: Enemy
@@ -39621,11 +39797,11 @@ MonoBehaviour:
   healthBar: {fileID: 1735974383}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1050769408}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 0}
   pat: {fileID: 1050769403}
   aiStates: {fileID: 1050769404}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!114 &1050769403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39660,6 +39836,7 @@ MonoBehaviour:
   startPos: {fileID: 651955972}
   secPos: {fileID: 1611099085}
   anim: {fileID: 1050769408}
+  aud: {fileID: 0}
 --- !u!114 &1050769405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39741,6 +39918,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &1050769409
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050769400}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1052612594
 GameObject:
   m_ObjectHideFlags: 0
@@ -39883,6 +40156,7 @@ GameObject:
   - component: {fileID: 1069892133}
   - component: {fileID: 1069892132}
   - component: {fileID: 1069892131}
+  - component: {fileID: 1069892137}
   m_Layer: 6
   m_Name: Idle Ghoul (1)
   m_TagString: Enemy
@@ -39928,6 +40202,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 188517836}
   anim: {fileID: 1069892136}
+  aud: {fileID: 0}
 --- !u!195 &1069892132
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -39992,11 +40267,11 @@ MonoBehaviour:
   healthBar: {fileID: 1825896832}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1069892136}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1069892131}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &1069892135
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40031,6 +40306,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &1069892137
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069892129}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1073139710
 GameObject:
   m_ObjectHideFlags: 0
@@ -40257,7 +40628,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -40273,7 +40644,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -40329,7 +40700,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -41314,7 +41685,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127281678}
-  m_LocalRotation: {x: 0.1811629, y: -0.26178086, z: 0.05009783, w: 0.9466473}
+  m_LocalRotation: {x: 0.29816514, y: -0.253457, z: 0.08245299, w: 0.9165471}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41863,6 +42234,7 @@ GameObject:
   - component: {fileID: 1178742679}
   - component: {fileID: 1178742678}
   - component: {fileID: 1178742677}
+  - component: {fileID: 1178742683}
   m_Layer: 6
   m_Name: Idle Ghoul (2)
   m_TagString: Enemy
@@ -41908,6 +42280,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 188517836}
   anim: {fileID: 1178742682}
+  aud: {fileID: 0}
 --- !u!195 &1178742678
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -41972,11 +42345,11 @@ MonoBehaviour:
   healthBar: {fileID: 1278546349}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1178742682}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1178742677}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &1178742681
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -42011,6 +42384,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!82 &1178742683
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178742675}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1179192950
 GameObject:
   m_ObjectHideFlags: 0
@@ -43734,11 +44203,11 @@ MonoBehaviour:
   healthBar: {fileID: 1699287122}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1283885367}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 0}
   pat: {fileID: 1283885364}
   aiStates: {fileID: 1283885363}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!114 &1283885362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43783,6 +44252,7 @@ MonoBehaviour:
   startPos: {fileID: 840581407}
   secPos: {fileID: 766896494}
   anim: {fileID: 1283885367}
+  aud: {fileID: 0}
 --- !u!114 &1283885364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43908,8 +44378,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283964392}
-  m_LocalRotation: {x: 0.21543024, y: -0.25978827, z: 0.05957394, w: 0.9394418}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.33127886, y: -0.2502929, z: 0.09161005, w: 0.90510523}
+  m_LocalPosition: {x: -0.001739502, y: -0.0010986328, z: 0.0028839111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46931,6 +47401,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1312825491}
   anim: {fileID: 1460093103}
+  aud: {fileID: 0}
 --- !u!195 &1460093099
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46995,11 +47466,11 @@ MonoBehaviour:
   healthBar: {fileID: 1037890094}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1460093103}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1460093098}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &1460093102
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47596,8 +48067,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484169840}
-  m_LocalRotation: {x: 0.19830662, y: -0.2608289, z: 0.054838665, w: 0.94320494}
-  m_LocalPosition: {x: -257.6944, y: -908.3772, z: -107.94922}
+  m_LocalRotation: {x: 0.31474364, y: -0.25191954, z: 0.08703752, w: 0.91098714}
+  m_LocalPosition: {x: -248.6416, y: -890.30725, z: -123.06581}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55527,6 +55998,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1972293451}
   anim: {fileID: 1565171508}
+  aud: {fileID: 0}
 --- !u!114 &1565171511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55569,11 +56041,11 @@ MonoBehaviour:
   healthBar: {fileID: 1919969798}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1565171508}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1565171510}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &1565171513
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60786,8 +61258,8 @@ MonoBehaviour:
   m_Orbits:
   - m_Height: 3
     m_Radius: 9
-  - m_Height: 4.26
-    m_Radius: 8.8
+  - m_Height: 22.33
+    m_Radius: 26.42
   - m_Height: 1
     m_Radius: 3
   m_LegacyHeadingBias: 3.4028235e+38
@@ -60803,7 +61275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728828958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.6944, y: -908.3772, z: -107.94922}
+  m_LocalPosition: {x: -248.6416, y: -890.30725, z: -123.06581}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64966,6 +65438,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 566869879}
   anim: {fileID: 1762196826}
+  aud: {fileID: 0}
 --- !u!114 &1762196829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65008,11 +65481,11 @@ MonoBehaviour:
   healthBar: {fileID: 679254533}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1762196826}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1762196828}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &1762196831
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -65306,11 +65779,11 @@ MonoBehaviour:
   healthBar: {fileID: 1307158393}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 1771440652}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 1771440656}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!114 &1771440655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65353,6 +65826,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1222367256}
   anim: {fileID: 1771440652}
+  aud: {fileID: 0}
 --- !u!136 &1771440657
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -77879,11 +78353,11 @@ MonoBehaviour:
   healthBar: {fileID: 1479043383}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 2078971266}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 0}
   pat: {fileID: 2078971263}
   aiStates: {fileID: 2078971262}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!114 &2078971261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77928,6 +78402,7 @@ MonoBehaviour:
   startPos: {fileID: 1737507515}
   secPos: {fileID: 1118087513}
   anim: {fileID: 2078971266}
+  aud: {fileID: 0}
 --- !u!114 &2078971263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78467,6 +78942,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 2134049426}
   anim: {fileID: 2123916042}
+  aud: {fileID: 0}
 --- !u!195 &2123916038
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -78531,11 +79007,11 @@ MonoBehaviour:
   healthBar: {fileID: 1894507362}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 2123916042}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 2123916037}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &2123916041
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -82419,6 +82895,7 @@ MonoBehaviour:
   playerTransform: {fileID: 216918779}
   startPos: {fileID: 1222367256}
   anim: {fileID: 2141292076}
+  aud: {fileID: 0}
 --- !u!114 &2141292079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82461,11 +82938,11 @@ MonoBehaviour:
   healthBar: {fileID: 1959509693}
   ourManager: {fileID: 1041904958}
   enemyAnim: {fileID: 2141292076}
-  enemyHurt: {fileID: 0}
   ai: {fileID: 2141292078}
   pat: {fileID: 0}
   aiStates: {fileID: 0}
   col: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!136 &2141292081
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -83249,7 +83726,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 1
@@ -83327,7 +83804,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -83343,7 +83820,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -83399,7 +83876,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -83847,7 +84324,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -83863,7 +84340,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -83978,7 +84455,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -85019,7 +85496,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: ExitOptions
         m_Mode: 1
@@ -85068,7 +85545,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -85084,7 +85561,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -85113,7 +85590,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -85129,7 +85606,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -85244,7 +85721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: EnterOptions
         m_Mode: 1
@@ -85301,7 +85778,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -85317,7 +85794,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041904960}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
           m_MethodName: ClickSound
           m_Mode: 1
@@ -85373,7 +85850,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1041904960}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1

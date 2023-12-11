@@ -9,20 +9,30 @@ public class Enemystats : MonoBehaviour
     public EnemyHealthBar healthBar;
     public GameManager ourManager;
     public Animator enemyAnim;
-    public AudioSource enemyHurt;
     public IdleAI ai;
     public Patrolling pat;
     public AIStateManager aiStates;
     public Collider col;
+    [SerializeField] private AudioSource aud;
     private void Start()
     {
+        if (aud == null)
+        {
+            aud = gameObject.AddComponent<AudioSource>();
+            
+        }
+        aud.loop = false;
+        aud.playOnAwake = false;
         col = GetComponent<Collider>();
+        aud = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
     public void Losehealth(int damage)
     {
         currentHealth -= damage;
+        aud.clip = SoundEffectsManager.instance.enemyAttackSound;
+        aud.Play();
         //healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
@@ -30,7 +40,8 @@ public class Enemystats : MonoBehaviour
             currentHealth = 0;
             if (currentHealth <= 0)
             {
-
+                aud.clip = SoundEffectsManager.instance.enemyDeathSound;
+                aud.Play();
              float   gainCoinsCurrency = Random.Range(2, 5);
                 ourManager.GainCoins(gainCoinsCurrency);
                 GameManager.instance.UpdateEnemyKillCount();

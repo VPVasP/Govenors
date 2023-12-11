@@ -12,6 +12,7 @@ public class AIStateManager : MonoBehaviour
     public Transform startPos;
     public Transform secPos;
     public Animator anim;
+    [SerializeField] private AudioSource aud;
     private enum State
     {
         Patrolling,
@@ -27,6 +28,7 @@ public class AIStateManager : MonoBehaviour
     {
         pat = GetComponent<Patrolling>();
         fov = GetComponent<FOV>();
+        aud = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -62,6 +64,7 @@ public class AIStateManager : MonoBehaviour
                 if (fov.isAttacking)
                 {
                     anim.SetBool("IsAttacking", true);
+                
                 }
                 else if(!fov.isAttacking)
                 {

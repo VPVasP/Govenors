@@ -69,9 +69,11 @@ public class FOV : MonoBehaviour
         {
             if (Player.GetComponent<PlayerStats>())
             {
+               
                 Player.GetComponent<PlayerStats>().TakeDamage(5);
                 nextFire = Time.time + fireRate;
                 FOVCheck();
+               
             }
         }
     }
