@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI CurrencyText;
     public TextMeshProUGUI enemiesKilledText;
   public AudioSource aud;
-    public   AudioClip[] audioClips;
+    public   AudioClip audioClip;
     public GameObject shopPanel;
     public GameObject Sword;
     public GameObject OneHandedSwordOne;
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     {
         CurrencyText.text = "Coins " + CurrentCurrency.ToString();
         aud = GetComponent<AudioSource>();
-        aud.clip = audioClips[0];
+        aud.clip = audioClip;
         aud.Play();
         enemiesKilledText.text = "Enemies Killed " + enemiesKilled.ToString();
     }
@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
     }
     public void ExitUpgradeSystem()
     {
-        aud.clip = audioClips[0];
+        aud.clip = audioClip;
         aud.Play();
         shopPanel.SetActive(false);
         PauseManager.instance.isPaused = false;

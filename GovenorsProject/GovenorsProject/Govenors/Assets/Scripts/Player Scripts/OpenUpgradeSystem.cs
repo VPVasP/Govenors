@@ -18,7 +18,7 @@ public class OpenUpgradeSystem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             openOption.SetActive(false);
-            GameManager.instance.aud.clip = GameManager.instance.audioClips[0];
+           
         }
     }
     private void OnTriggerStay(Collider other)
@@ -27,7 +27,6 @@ public class OpenUpgradeSystem : MonoBehaviour
         {
             openOption.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
-            GameManager.instance.aud.clip = GameManager.instance.audioClips[1];
             OpenUpgrade.SetActive(true);
         }
     }
