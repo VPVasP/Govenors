@@ -12,7 +12,6 @@ public class AIStateManager : MonoBehaviour
     public Transform startPos;
     public Transform secPos;
     public Animator anim;
-    [SerializeField] private AudioSource aud;
     private enum State
     {
         Patrolling,
@@ -28,7 +27,7 @@ public class AIStateManager : MonoBehaviour
     {
         pat = GetComponent<Patrolling>();
         fov = GetComponent<FOV>();
-        aud = GetComponent<AudioSource>();
+        playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()

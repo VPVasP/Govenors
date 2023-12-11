@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Searcher;
 using UnityEngine;
  
 public class ComboSystem : MonoBehaviour
 {
+    public static ComboSystem instance;
     public GameObject sword;
     public GameObject OneHandedSword;
     private Animator anim;
@@ -11,10 +13,15 @@ public class ComboSystem : MonoBehaviour
     public static int noOfClicks = 0;
     float lastClickedTime = 0;
     float maxComboDelay = 1;
- 
+    public bool canAttack = false;
+    private void Awake()
+    {
+       instance = this; 
+    }
     private void Start()
     {
         anim = GetComponent<Animator>();
+        canAttack = true;
     }
     void Update()
     {

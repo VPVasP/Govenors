@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
     public int currentHealth = 100;
     public int maxHealth = 100;
     public HealthBar healthBar;
-    public Animator playerAnim;
+    [SerializeField] private Animator anim;
     public PlayerController movement;
     public ComboSystem comboSystem;
     public static PlayerStats instance;
@@ -22,6 +22,7 @@ public class PlayerStats : MonoBehaviour
         comboSystem = GetComponent<ComboSystem>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+       anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -29,14 +30,14 @@ public class PlayerStats : MonoBehaviour
         {
             movement.enabled = false;
             comboSystem.enabled = false;
-            playerAnim.SetBool("IsDead",true);
+           anim.SetBool("IsDead",true);
             Invoke("ShowPanel", 5f);
         }
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+      //  anim.SetTrigger("Hurt");
         healthBar.SetHealth(currentHealth);
     }
     void ShowPanel()

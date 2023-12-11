@@ -7,17 +7,16 @@ public class FOV : MonoBehaviour
     public float radius;
     [Range(0,360)]
     public float angle;
-    public GameObject playerRef;
     public LayerMask targetMask;
     public LayerMask obstructionMask;
     public bool canSeePlayer;
-    public Transform Player;
+   public Transform Player;
     public float fireRate = 8F;
-    private float nextFire = 0.0F;
+    private float nextFire = 0f;
     public bool isAttacking = false;
     private void Start()
     {
-        playerRef = GameObject.FindGameObjectWithTag("Player");
+        Player = Player = GameObject.FindWithTag("Player").transform;
     }
     public void FOVCheck()
     {
@@ -65,16 +64,22 @@ public class FOV : MonoBehaviour
 
     void GhoulAttack()
     {
-        if (Vector3.Distance(transform.position, Player.position) <= 2 && Time.time > nextFire)
+        if (Vector3.Distance(transform.position, Player.position) <= 2 && Time.time > nextFire &&isAttacking)
         {
             if (Player.GetComponent<PlayerStats>())
             {
                
                 Player.GetComponent<PlayerStats>().TakeDamage(5);
+                ComboSystem.instance.canAttack = false;
                 nextFire = Time.time + fireRate;
                 FOVCheck();
                
             }
+            nextFire = Time.time + fireRate;
+        }
+        else
+        {
+            ComboSystem.instance.canAttack = true;
         }
     }
 

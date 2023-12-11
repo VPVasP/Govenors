@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
     }
     public void LoadOutro()
     {
-        SceneManager.LoadScene("Outro");
+        SceneManager.LoadScene("IntroScene");
     }
     public void ExitUpgradeSystem()
     {

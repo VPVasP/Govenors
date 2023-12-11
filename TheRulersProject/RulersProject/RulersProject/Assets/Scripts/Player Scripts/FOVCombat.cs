@@ -17,6 +17,7 @@ public class FOVCombat : MonoBehaviour
     private void Start()
     {
        animator = GetComponent<Animator>();
+        Player = GameObject.FindWithTag("Player").transform;
     }
 
 

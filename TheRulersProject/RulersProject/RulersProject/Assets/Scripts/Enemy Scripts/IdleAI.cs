@@ -26,6 +26,7 @@ public class IdleAI : MonoBehaviour
     {
         fov = GetComponent<FOV>();
         aud = GetComponent<AudioSource>();
+        playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
@@ -60,8 +61,7 @@ public class IdleAI : MonoBehaviour
                 anim.SetBool("IsChasing", false);
                 if (fov.isAttacking)
                 {
-                    aud.clip = SoundEffectsManager.instance.enemyAttackSound;
-                    aud.Play();
+                    
                     anim.SetBool("IsAttacking", true);
                     Debug.Log("Attacking Player");
                     
