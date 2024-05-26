@@ -1,5 +1,11 @@
 # GOVENORS
-Govenors was a group project for college. I was responsible for the player controller and player related mechanics. It is third person beat up game where you defeat enemies to progress through the next stages. It was created in Unity Engine.
+Developed Governors as part of a group project during
+my second semester of my first year in college which I
+was responsible for the player controller and player
+related mechanics. It is third person game where you
+defeat enemies to progress through the next stages.
+
+- Technologies Used: Unity, C#
 - You can try the game on Itch.io: (https://itchiovp.itch.io/govenors)
 
 ## How to Install
